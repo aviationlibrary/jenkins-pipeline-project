@@ -29,7 +29,7 @@ pipeline {
        stage('Docker Build And Push') {
             steps {
                 script {
-                    docker.withRegistry('', 'docker-cred') {
+                    docker.withRegistry('', 'docker_cred') {
                         def buildNumber = env.BUILD_NUMBER ?: '1'
                         def image = docker.build("onaifohchinwe094/crud-123:latest")
                         image.push()
