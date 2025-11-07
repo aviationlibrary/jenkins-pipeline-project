@@ -9,7 +9,7 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
         SONAR_TOKEN = credentials('sonar-token')
         SONAR_ORGANIZATION = 'aviationlibrary'
-        #SONAR_PROJECT_KEY = 'aviationlibrary_jenkins-pipeline-project'
+        SONAR_PROJECT_KEY = 'aviationlibrary_jenkins-pipeline-project'
     }
 
     stages {
