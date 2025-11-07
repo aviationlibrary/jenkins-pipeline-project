@@ -14,7 +14,7 @@ pipeline {
         
         stage('Code-Analysis') {
             steps {
-                withSonarQubeEnv('SonarqubeCloud') {
+                withSonarQubeEnv('SonarCloud') {
                     sh '''$SCANNER_HOME/bin/sonar-scanner \
   -Dsonar.organization=aviationlibrary \
   -Dsonar.projectKey=aviationlibrary_jenkins-pipeline-project \
